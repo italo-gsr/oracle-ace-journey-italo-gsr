@@ -1,3 +1,5 @@
+# Dynamic Groups vs User Groups na OCI: Entendendo com uma metáfora simples
+
 Cloud computing trouxe muitas vantagens, mas também trouxe um desafio importante: controle de acesso.
 
 Quem pode acessar recursos?
@@ -12,7 +14,9 @@ Embora pareçam semelhantes, eles resolvem problemas diferentes.
 
 Para entender isso de forma simples, vamos usar uma metáfora.
 
-Imagine uma empresa
+---
+
+## Imagine uma empresa
 Pense na OCI como um prédio corporativo.
 
 Nesse prédio existem dois tipos de “atores”:
@@ -25,7 +29,9 @@ Já as máquinas — como servidores ou robôs automatizados — também precisa
 
 Esse é exatamente o cenário que acontece na OCI.
 
-Users e Groups: organizando pessoas
+---
+
+## Users e Groups: organizando pessoas
 Na Oracle Cloud Infrastructure, um User representa uma pessoa que pode acessar o ambiente.
 
 Exemplos:
@@ -52,7 +58,9 @@ Na prática isso significa:
 
 “Todos os membros do grupo Developers podem gerenciar instâncias naquele compartment.”
 
-O Problema: recursos também precisam de permissões
+---
+
+## O Problema: recursos também precisam de permissões
 Agora imagine outro cenário.
 
 Uma aplicação rodando em uma Compute Instance precisa acessar o Object Storage para salvar arquivos.
@@ -67,7 +75,9 @@ Então como dar permissão para ela acessar outro serviço?
 
 É aqui que entram os Dynamic Groups.
 
-Dynamic Groups: permissões para recursos
+---
+
+## Dynamic Groups: permissões para recursos
 Na Oracle Cloud Infrastructure, um Dynamic Group permite que recursos da própria cloud recebam permissões.
 
 Exemplos de recursos que podem usar Dynamic Groups:
@@ -90,7 +100,9 @@ Ou seja, a autorização acontece com base em regras, não em credenciais indivi
 
 É exatamente esse tipo de lógica que os Dynamic Groups ajudam a implementar na cloud.
 
-Como Dynamic Groups funcionam
+---
+
+## Como Dynamic Groups funcionam
 Dynamic Groups usam regras baseadas em atributos para identificar recursos.
 
 Por exemplo:
@@ -105,7 +117,9 @@ Depois disso, criamos uma policy:
 Allow dynamic-group AppServers to read buckets in compartment Data
 Agora qualquer instância que satisfaça a regra pode acessar o Object Storage, sem a necessidade de credenciais.
 
-Exemplo real de uso
+---
+
+## Exemplo real de uso
 Imagine uma arquitetura comum na Oracle Cloud Infrastructure:
 
 Compute Instance executando uma aplicação
@@ -124,7 +138,9 @@ Sem usuários.
 Sem chaves expostas.
 Sem credenciais hardcoded.
 
-Quando usar cada um
+---
+
+## Quando usar cada um
 Use Groups quando:
 
 Pessoas precisam acessar a OCI
@@ -135,7 +151,10 @@ Use Dynamic Groups quando:
 Recursos precisam acessar outros serviços
 Automação
 Integração entre serviços
-Regra mental para nunca esquecer
+
+---
+
+## Regra mental para nunca esquecer
 Se você lembrar apenas de uma coisa deste artigo, lembre disso:
 
 Users entram na cloud.
@@ -148,7 +167,9 @@ Users → Groups
 Resources → Dynamic Groups
 Este artigo faz parte da série “Cloud explicada com metáforas do mundo real”, onde conceitos complexos de cloud são simplificados usando exemplos do dia a dia.
 
-Referências
+---
+
+## Referências
 Se você quiser se aprofundar nos conceitos apresentados neste artigo, estes materiais da documentação oficial da Oracle Cloud Infrastructure são um ótimo ponto de partida:
 
 Dynamic Groups — documentação oficial da Oracle
@@ -157,5 +178,6 @@ IAM Policies Overview
 https://docs.oracle.com/en-us/iaas/Content/Identity/policieshow/Policy_Basics.htm
 Managing Groups
 https://docs.oracle.com/en-us/iaas/Content/Identity/Tasks/managinggroups.htm
-Esses materiais explicam em mais detalhes como funcionam grupos, políticas e identidade de recursos na OCI.
+
+### Esses materiais explicam em mais detalhes como funcionam grupos, políticas e identidade de recursos na OCI.
 
