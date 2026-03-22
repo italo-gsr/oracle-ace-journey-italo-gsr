@@ -36,9 +36,10 @@ oracle-ace-journey/
 
 ## 📊 Progress
 
-* ✅ OCI Foundations *(in progress / completed — update as needed)*
-* ⏳ OCI Architect Associate
-* ⏳ Oracle ACE Program milestones
+* ✅ Oracle Cloud Infrastructure 2025 Certified Multicloud Architect Professional
+* ✅ Oracle Cloud Infrastructure 2024 Certified DevOps Professional
+* ✅ Oracle Cloud Data Management 2023 Certified Foundations Associate
+* ✅ Oracle Cloud Infrastructure 2023 Foundations Associate
 
 ---
 
@@ -107,9 +108,11 @@ oracle-ace-journey/
 
 ## 📊 Progresso
 
-* ✅ OCI Foundations *(em andamento / concluído — atualize conforme necessário)*
-* ⏳ OCI Architect Associate
-* ⏳ Marcos do programa Oracle ACE
+* ✅ Oracle Cloud Infrastructure 2025 Certified Multicloud Architect Professional
+* ✅ Oracle Cloud Infrastructure 2024 Certified DevOps Professional
+* ✅ Oracle Cloud Data Management 2023 Certified Foundations Associate
+* ✅ Oracle Cloud Infrastructure 2023 Foundations Associate
+
 
 ---
 
