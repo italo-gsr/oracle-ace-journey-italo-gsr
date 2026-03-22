@@ -26,10 +26,9 @@ oracle-ace-journey/
 ├── certifications/   # Oracle Cloud certifications
 ├── articles/         # Drafts and published articles
 ├── events/           # Meetups, talks, conferences
-├── learning/         # Notes, diagrams, and resources
 ├── achievements/     # Badges and recognitions
-├── community/        # Mentoring and contributions
-└── media/            # Images and presentations
+└── community/        # Mentoring and contributions
+
 ```
 
 ---
@@ -98,10 +97,8 @@ oracle-ace-journey/
 ├── certifications/   # Certificações Oracle Cloud
 ├── articles/         # Artigos (rascunhos e publicados)
 ├── events/           # Eventos, palestras e meetups
-├── learning/         # Anotações e estudos
 ├── achievements/     # Badges e conquistas
-├── community/        # Mentorias e contribuições
-└── media/            # Imagens e apresentações
+└── community/        # Mentorias e contribuições
 ```
 
 ---
